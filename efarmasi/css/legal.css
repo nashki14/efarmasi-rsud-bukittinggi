@@ -1,0 +1,166 @@
+/* Legal Pages Styles (Privacy, Terms, Disclaimer) */
+.legal-container {
+    padding: 100px 0 50px;
+    min-height: 100vh;
+    background: var(--background);
+}
+
+.legal-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 3rem 2rem;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.legal-header h1 {
+    color: var(--text);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+}
+
+.legal-header p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.legal-content {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.legal-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.legal-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.legal-section.warning {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.legal-section.warning h2 {
+    color: #e67e22;
+}
+
+.legal-section h2 {
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legal-section p {
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.legal-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.legal-section ul li {
+    padding: 0.75rem 0;
+    color: var(--text);
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.legal-section ul li:before {
+    content: '•';
+    color: var(--primary);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.legal-section ul li strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.contact-info {
+    background: var(--background);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary);
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    color: var(--text);
+}
+
+.contact-info strong {
+    color: var(--text);
+}
+
+/* Responsive Design for Legal Pages */
+@media (max-width: 768px) {
+    .legal-container {
+        padding: 80px 0 30px;
+    }
+    
+    .legal-header {
+        padding: 2rem 1rem;
+    }
+    
+    .legal-header h1 {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .legal-content {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .legal-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .legal-header h1 {
+        font-size: 1.7rem;
+    }
+    
+    .legal-content {
+        padding: 1.5rem;
+    }
+    
+    .legal-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .legal-section.warning {
+        padding: 1.5rem;
+    }
+}
